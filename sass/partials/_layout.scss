@@ -1,0 +1,33 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 200px;
+  background-color: $primary;
+}
+
+.headline {
+  margin: 30px auto;
+  @media (max-width: 768px) {
+    position: relative;
+    top: 30px;
+}
+}
+
+.row {
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  & .box {
+    height: 240px;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: $light;
+    &--bg-white {
+      background-color: $white;
+      border: 3px solid $danger;
+    }
+    &--bg-purple {
+      background-color: $danger;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.navbar {
+    & button {
+        border: none;
+    }
+    @media (max-width: 768px) {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 100;
+    }
+}

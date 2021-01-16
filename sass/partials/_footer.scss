@@ -1,0 +1,20 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & p, a {
+            margin: 0 100px;
+            color: $gray;
+        }
+    }
+    @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
